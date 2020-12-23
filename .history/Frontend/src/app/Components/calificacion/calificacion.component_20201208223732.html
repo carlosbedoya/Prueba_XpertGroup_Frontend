@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Custom fonts for this template-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">-->
+   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <title>Calificaciones</title>
+</head>
+
+<body class="bg-light" data-gr-c-s-loaded="true">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="mb-12">Validacion</h4>
+        <form #mensajeForm="ngForm">
+          <div class="row">
+            <div class="col-md-12 mb-12">
+              <label for="conversacion">CHAT CLIENTE</label>
+              <textarea class="form-control" id="conversacion" name="conversacion" [(ngModel)]="conversacion" placeholder="Ingresa el texto de chat del cliente" rows="10" required></textarea>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit" (click)="consultarConversacion(mensajeForm)">Calificar soporte</button>
+        </form>
+        <div class="row justify-content-md-center">
+          <div *ngFor="let estrella of cantidadEstrellas">
+            <span style="font-size: 48px; color:gold;">
+              <i class="fas fa-star"></i>
+            </span>
+          </div>
+          <div class="col-md-12">
+            {{msjCalificacion}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">© Carlos Bedoya</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
