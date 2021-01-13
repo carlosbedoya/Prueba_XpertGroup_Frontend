@@ -30,7 +30,7 @@ se manejo en dos proyectos independientes el primero el frontend en node.js y el
 
 
 # ENUNCIADO DEL EJERCICIO
-CallCenter reconocido en el mercado requiere calificar el servicio que la empresa brinda a sus clientes
+CallCenter reconocido en el mercado requiere calificar el servicio que la empresa brinda a sus clientes 
 
 por medio del historial de las conversaciones.
 Adjunto se encuentra un archivo con el formato propuesto.
